@@ -1,0 +1,19 @@
+{
+	"name": "laravel-ubereats-models",
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	"service": "dev",
+	"workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode":{
+            "extensions": [
+                "bmewburn.vscode-intelephense-client",
+                "ecodes.vscode-phpmd",
+                "editorconfig.editorconfig",
+                "swordev.phpstan",
+                "wongjn.php-sniffer"
+            ]
+        }
+    }
+}

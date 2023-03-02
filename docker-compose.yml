@@ -1,0 +1,7 @@
+version: "2.4"
+services:
+  dev:
+    image: 16nsk/devcontainers:8.1-16
+    volumes:
+      - .:/workspace
+    entrypoint: sh /workspace/setup.sh

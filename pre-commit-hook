@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# variables
+bg_red='\033[0;41m'
+bg_green='\033[0;42m'
+clear='\033[0m'
+bold='\033[1m'
+
+success_message="\n${bg_green} Committing changes ${clear}\n"
+error_message="\n${bg_red} Failed to commit changes. Please fix the failed unit tests before commit. ${clear}\n"
+running_tests_message="\n${bg_green}${bold} RUNNING PHP UNIT TESTS ${clear}\n"
+
+success_phpstan_message="\n${bg_green} PHPSTAN with valid result ${clear}\n"
+error_phpstan_message="\n${bg_red} Run ./vendor/bin/phpstan analyse. Please fix errors before commit. ${clear}\n"
+running_phpstan_message="\n${bg_green}${bold} RUNNING PHPSTAN TOOL ${clear}\n"
+
+success_phpcs_message="\n${bg_green} PHPCS with valid result ${clear}\n"
+error_phpcs_message="\n${bg_red} Run ./vendor/bin/phpcs -n --standard=phpcs.xml. Please fix errors before commit. ${clear}\n"
+running_phpcs_message="\n${bg_green}${bold} RUNNING PHPCS TOOL ${clear}\n"
+
+echo -e ${running_phpstan_message}
+if ./vendor/bin/phpstan analyse; then
+    echo -e ${success_phpstan_message}
+else
+    echo -e ${error_phpstan_message}
+    exit 1
+fi
+
+echo -e ${running_phpcs_message}
+if ./vendor/bin/phpcs phpcs.xml; then
+    echo -e ${success_phpcs_message}
+else
+    echo -e ${error_phpcs_message}
+    exit 1
+fi
+
+echo -e "${bg_green}${bold} CREATING FRESH TEST DATABASE ${clear}"
+
+php artisan reset:db --env=testing
+
+echo -e ${running_tests_message}
+if ./vendor/bin/phpunit --stop-on-failure --stop-on-error; then
+   echo -e ${success_message}
+else
+   echo -e ${error_message}
+   exit 1
+fi
