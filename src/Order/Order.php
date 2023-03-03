@@ -10,6 +10,7 @@ use CastModels\Model;
 class Order extends Model
 {
     public string $id;
+    public string $display_id;
     public string $uuid;
     public string $external_reference_id;
     public State $current_state;

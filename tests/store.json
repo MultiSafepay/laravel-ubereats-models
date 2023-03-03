@@ -1,0 +1,34 @@
+{
+    "name": "Sushi Sushi Sushi",
+    "store_id": "7e973b58-40b7-4bd8-b01c-c7d1cbd194f6",
+    "location": {
+      "address": "636 W 28th Street",
+      "address_2": "Floor 3",
+      "city": "New York",
+      "country": "US",
+      "postal_code": "10001",
+      "state": "NY",
+      "latitude": 40.7527198,
+      "longitude": -74.00635
+    },
+    "contact_emails": [
+      "owner@example.com",
+      "announcements+uber@example.com",
+      "store-east@example.com"
+    ],
+    "raw_hero_url": "https://www.example.com/hero_url_east.png",
+    "price_bucket": "$$$",
+    "avg_prep_time": 5,
+    "status": "active",
+    "merchant_store_id": "42",
+    "timezone": "America/New_York",
+    "web_url": "https://www.ubereats.com/new-york/east-coast-sushi",
+    "pos_data": {
+      "integration_enabled": true,
+      "order_manager_client_id": "XxXxXxXxXxXxXxXxXxXxX",
+      "integrator_store_id": "mypos-sushi3-42",
+      "integrator_brand_id": "sushi3",
+      "store_configuration_data": "{\"hideMenuItems\": [\"salmon\", \"yellowtail\"]}",
+      "is_order_manager_pending": true
+    }
+  }

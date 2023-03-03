@@ -12,5 +12,6 @@ class Cart extends Model
     /** \UbereatsModels\Order\Item */
     public Collection $items;
     public string $special_instructions;
-    public FulfillmentIssue $fulfillment_issues;
+    /** \UbereatsModels\Order\FulfillmentIssue */
+    public Collection $fulfillment_issues;
 }

@@ -7,7 +7,7 @@ namespace UbereatsModels\Order;
 use UbereatsModels\Order\DeliveryType;
 use CastModels\Model;
 
-class Delivery extends Model
+class MerchantDelivery extends Model
 {
     public Location $location;
     public DeliveryType $type;

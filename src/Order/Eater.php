@@ -13,5 +13,5 @@ class Eater extends Model
     public string $last_name;
     public string $phone;
     public string $phone_code;
-    public Delivery $delivery;
+    public MerchantDelivery $delivery;
 }
