@@ -1,0 +1,1428 @@
+{
+    "menu_type": "MENU_TYPE_FULFILLMENT_DELIVERY",
+    "items": [
+        {
+            "title": {
+                "translations": {
+                    "en": "An Item"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": "The Description"
+                }
+            },
+            "price_info": {
+                "price": 1
+            },
+            "visibility_info": {
+                "start_date": "2020-01-01",
+                "end_date": "2020-01-31",
+                "hours": [
+                    {
+                        "hours_of_week": [
+                            {
+                                "day_of_week": "monday",
+                                "time_periods": [
+                                    {
+                                        "start_time": "09:00",
+                                        "end_time": "13:00"
+                                    }
+                                ]
+                            },
+                            {
+                                "day_of_week": "tuesday",
+                                "time_periods": [
+                                    {
+                                        "start_time": "09:00",
+                                        "end_time": "13:00"
+                                    }
+                                ]
+                            },
+                            {
+                                "day_of_week": "wednesday",
+                                "time_periods": [
+                                    {
+                                        "start_time": "09:00",
+                                        "end_time": "13:00"
+                                    }
+                                ]
+                            },
+                            {
+                                "day_of_week": "thursday",
+                                "time_periods": [
+                                    {
+                                        "start_time": "09:00",
+                                        "end_time": "13:00"
+                                    }
+                                ]
+                            },
+                            {
+                                "day_of_week": "friday",
+                                "time_periods": [
+                                    {
+                                        "start_time": "09:00",
+                                        "end_time": "13:00"
+                                    }
+                                ]
+                            },
+                            {
+                                "day_of_week": "saturday",
+                                "time_periods": [
+                                    {
+                                        "start_time": "09:00",
+                                        "end_time": "13:00"
+                                    }
+                                ]
+                            },
+                            {
+                                "day_of_week": "sunday",
+                                "time_periods": [
+                                    {
+                                        "start_time": "09:00",
+                                        "end_time": "13:00"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "item1",
+            "title": {
+                "translations": {
+                    "default": "first item"
+                }
+            },
+            "price_info": {
+                "price": 1000
+            },
+            "modifier_group_ids": {
+                "ids": [
+                    "mg1"
+                ]
+            },
+            "tax_label_info": {
+                "default_value": {
+                    "labels": [
+                        "CAT_PREPACKAGED_FOOD",
+                        "CAT_SNACK",
+                        "TEMP_UNHEATED"
+                    ],
+                    "source": "MANUAL"
+                }
+            },
+            "dish_info": {
+              "classifications": {
+                "dietary_label_info": {
+                  "labels": [
+                    "VEGETARIAN",
+                    "GLUTEN_FREE"
+                  ]
+                }
+              }
+            },
+            "product_info": {
+              "target_market": "US",
+              "gtin": "1354435445"
+            }
+        },
+        {
+            "id": "item2",
+            "title": {
+                "translations": {
+                    "default": "second item"
+                }
+            },
+            "price_info": {
+                "price": 2000
+            },
+            "modifier_group_ids": {
+                "ids": [
+                    "mg2"
+                ]
+            },
+            "tax_label_info": {
+                "default_value": {
+                    "labels": [
+                        "CAT_FOOD_BY_WT_VOL",
+                        "TEMP_HEATED"
+                    ],
+                    "source": "MANUAL"
+                }
+            },
+            "dish_info": {
+              "classifications": {
+                "dietary_label_info": {
+                  "labels": [
+                    "VEGETARIAN",
+                    "VEGAN",
+                    "GLUTEN_FREE"
+                  ]
+                }
+              }
+            },
+            "product_info": {
+              "plu": "9416"
+            },
+            "selling_info": [
+              {
+                "sold_by_unit": {
+                  "measurement_type": "MEASUREMENT_TYPE_WEIGHT",
+                  "weight_unit": "WEIGHT_UNIT_TYPE_METRIC_GRAM"
+                },
+                "quantity_constraints": {
+                  "min_permitted": 100,
+                  "max_permitted": 7000,
+                  "increment": 100,
+                  "default_quantity": 100
+                }
+              }
+            ]
+        },
+        {
+            "id": "item3",
+            "title": {
+                "translations": {
+                    "default": "third item"
+                }
+            },
+            "price_info": {
+                "price": 3000
+            },
+            "modifier_group_ids": {
+                "ids": [
+                    "mg3"
+                ]
+            },
+            "tax_label_info": {
+                "default_value": {
+                    "labels": [
+                        "CAT_JUICE",
+                        "TRAIT_PCT_100",
+                        "TEMP_COLD"
+                    ],
+                    "source": "MANUAL"
+                }
+            },
+            "dish_info": {
+              "classifications": {
+                "dietary_label_info": {
+                  "labels": []
+                }
+              }
+            },
+            "product_info": {
+              "merchant_id": "merchant-id-1234"
+            },
+            "selling_info": [
+              {
+                "sold_by_unit": {
+                  "measurement_type": "MEASUREMENT_TYPE_WEIGHT",
+                  "weight_unit": "WEIGHT_UNIT_TYPE_METRIC_KILOGRAM"
+                },
+                "quantity_constraints": {
+                  "min_permitted": 1,
+                  "max_permitted": 10,
+                  "increment": 1,
+                  "default_quantity": 1
+                },
+                "priced_by_to_sold_by_unit_conversion_info": {
+                  "conversion_rate": 1
+                }
+              }
+            ]
+        },
+        {
+            "title": {
+                "translations": {
+                    "en_us": "Barbeque sauce"
+                }
+            },
+            "quantity_info": {
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-sauces",
+                        "quantity": {
+                            "max_permitted": 10,
+                            "min_permitted": null,
+                            "default_quantity": null,
+                            "charge_above": null,
+                            "refund_under": null
+                        }
+                    }
+                ],
+                "quantity": {}
+            },
+            "external_data": "External data for barbeque sauce",
+            "price_info": {
+                "price": 0,
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-sauces",
+                        "price": 100
+                    }
+                ]
+            },
+            "tax_info": {
+                "tax_rate": 8,
+                "vat_rate_percentage": null
+            },
+            "id": "Barbeque-sauce"
+        },
+        {
+            "title": {
+                "translations": {
+                    "en_us": "Honey mustard sauce"
+                }
+            },
+            "quantity_info": {
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-sauces",
+                        "quantity": {
+                            "max_permitted": 10,
+                            "min_permitted": null,
+                            "default_quantity": null,
+                            "charge_above": null,
+                            "refund_under": null
+                        }
+                    }
+                ],
+                "quantity": {}
+            },
+            "external_data": "External data for honey mustard sauce",
+            "price_info": {
+                "price": 0,
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-sauces",
+                        "price": 100
+                    }
+                ]
+            },
+            "tax_info": {
+                "tax_rate": 8,
+                "vat_rate_percentage": null
+            },
+            "id": "Honey-mustard-sauce"
+        },
+        {
+            "description": {
+                "translations": {
+                    "en_us": ""
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Soda"
+                }
+            },
+            "nutritional_info": {
+                "kilojoules": null,
+                "calories": null
+            },
+            "quantity_info": {
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-drink",
+                        "quantity": {
+                            "max_permitted": 1,
+                            "min_permitted": null,
+                            "default_quantity": null,
+                            "charge_above": null,
+                            "refund_under": null
+                        }
+                    }
+                ],
+                "quantity": {}
+            },
+            "external_data": null,
+            "suspension_info": null,
+            "modifier_group_ids": {
+                "overrides": [],
+                "ids": null
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-drink",
+                        "price": 0
+                    }
+                ]
+            },
+            "tax_info": {
+                "tax_rate": null,
+                "vat_rate_percentage": null
+            },
+            "id": "Soda"
+        },
+        {
+            "description": {
+                "translations": {
+                    "en_us": ""
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Medium rare"
+                }
+            },
+            "nutritional_info": {
+                "kilojoules": null,
+                "calories": null
+            },
+            "quantity_info": {
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-cooking-time",
+                        "quantity": {
+                            "max_permitted": 1,
+                            "min_permitted": null,
+                            "default_quantity": null,
+                            "charge_above": null,
+                            "refund_under": null
+                        }
+                    }
+                ],
+                "quantity": {}
+            },
+            "external_data": null,
+            "suspension_info": null,
+            "modifier_group_ids": {
+                "overrides": [],
+                "ids": [
+                    "Choose-cooking-metho"
+                ]
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-cooking-time",
+                        "price": 0
+                    }
+                ]
+            },
+            "tax_info": {
+                "tax_rate": null,
+                "vat_rate_percentage": null
+            },
+            "id": "Medium-rare"
+        },
+        {
+            "description": {
+                "translations": {
+                    "en_us": "Burger and a drink!"
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Burger combo"
+                }
+            },
+            "nutritional_info": {
+                "kilojoules": null,
+                "calories": null
+            },
+            "quantity_info": {
+                "overrides": [],
+                "quantity": {}
+            },
+            "external_data": null,
+            "suspension_info": null,
+            "modifier_group_ids": {
+                "overrides": [],
+                "ids": [
+                    "Choose-a-burger",
+                    "Choose-drink"
+                ]
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 1000,
+                "overrides": []
+            },
+            "tax_info": {
+                "tax_rate": null,
+                "vat_rate_percentage": null
+            },
+            "id": "Burger-combo"
+        },
+        {
+            "description": {
+                "translations": {
+                    "en_us": ""
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Cheeseburger"
+                }
+            },
+            "nutritional_info": {
+                "kilojoules": null,
+                "calories": null
+            },
+            "quantity_info": {
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-a-burger",
+                        "quantity": {
+                            "max_permitted": 1,
+                            "min_permitted": null,
+                            "default_quantity": null,
+                            "charge_above": null,
+                            "refund_under": null
+                        }
+                    }
+                ],
+                "quantity": {}
+            },
+            "external_data": null,
+            "suspension_info": null,
+            "modifier_group_ids": {
+                "overrides": [],
+                "ids": [
+                    "Choose-patty"
+                ]
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-a-burger",
+                        "price": 0
+                    }
+                ]
+            },
+            "tax_info": {
+                "tax_rate": null,
+                "vat_rate_percentage": null
+            },
+            "id": "Cheeseburger"
+        },
+        {
+            "description": {
+                "translations": {
+                    "en_us": ""
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Sear for 10 seconds"
+                }
+            },
+            "nutritional_info": {
+                "kilojoules": null,
+                "calories": null
+            },
+            "quantity_info": {
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Additional-pan-sear",
+                        "quantity": {
+                            "max_permitted": 1,
+                            "min_permitted": null,
+                            "default_quantity": null,
+                            "charge_above": null,
+                            "refund_under": null
+                        }
+                    }
+                ],
+                "quantity": {}
+            },
+            "external_data": null,
+            "suspension_info": null,
+            "modifier_group_ids": {
+                "overrides": [],
+                "ids": null
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Additional-pan-sear",
+                        "price": 0
+                    }
+                ]
+            },
+            "tax_info": {
+                "tax_rate": null,
+                "vat_rate_percentage": null
+            },
+            "id": "Sear-for-10-seconds"
+        },
+        {
+            "description": {
+                "translations": {
+                    "en_us": ""
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Sous vide"
+                }
+            },
+            "nutritional_info": {
+                "kilojoules": null,
+                "calories": null
+            },
+            "quantity_info": {
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-cooking-metho",
+                        "quantity": {
+                            "max_permitted": 1,
+                            "min_permitted": null,
+                            "default_quantity": null,
+                            "charge_above": null,
+                            "refund_under": null
+                        }
+                    }
+                ],
+                "quantity": {}
+            },
+            "external_data": null,
+            "suspension_info": null,
+            "modifier_group_ids": {
+                "overrides": [],
+                "ids": [
+                    "Additional-pan-sear"
+                ]
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-cooking-metho",
+                        "price": 0
+                    }
+                ]
+            },
+            "tax_info": {
+                "tax_rate": null,
+                "vat_rate_percentage": null
+            },
+            "id": "Sous-vide"
+        },
+        {
+            "description": {
+                "translations": {
+                    "en_us": ""
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Chicken burger"
+                }
+            },
+            "nutritional_info": {
+                "kilojoules": null,
+                "calories": null
+            },
+            "quantity_info": {
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-a-burger",
+                        "quantity": {
+                            "max_permitted": 1,
+                            "min_permitted": null,
+                            "default_quantity": null,
+                            "charge_above": null,
+                            "refund_under": null
+                        }
+                    }
+                ],
+                "quantity": {}
+            },
+            "external_data": null,
+            "suspension_info": null,
+            "modifier_group_ids": {
+                "overrides": [],
+                "ids": null
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 200,
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-a-burger",
+                        "price": 200
+                    }
+                ]
+            },
+            "tax_info": {
+                "tax_rate": null,
+                "vat_rate_percentage": null
+            },
+            "id": "Chicken-burger"
+        },
+        {
+            "description": {
+                "translations": {
+                    "en_us": ""
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Veggie"
+                }
+            },
+            "nutritional_info": {
+                "kilojoules": null,
+                "calories": null
+            },
+            "quantity_info": {
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-patty",
+                        "quantity": {
+                            "max_permitted": 1,
+                            "min_permitted": null,
+                            "default_quantity": null,
+                            "charge_above": null,
+                            "refund_under": null
+                        }
+                    }
+                ],
+                "quantity": {}
+            },
+            "external_data": null,
+            "suspension_info": null,
+            "modifier_group_ids": {
+                "overrides": [],
+                "ids": null
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-patty",
+                        "price": 0
+                    }
+                ]
+            },
+            "tax_info": {
+                "tax_rate": null,
+                "vat_rate_percentage": null
+            },
+            "id": "Veggie"
+        },
+        {
+            "description": {
+                "translations": {
+                    "en_us": ""
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Water"
+                }
+            },
+            "nutritional_info": {
+                "kilojoules": null,
+                "calories": null
+            },
+            "quantity_info": {
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-drink",
+                        "quantity": {
+                            "max_permitted": 1,
+                            "min_permitted": null,
+                            "default_quantity": null,
+                            "charge_above": null,
+                            "refund_under": null
+                        }
+                    }
+                ],
+                "quantity": {}
+            },
+            "external_data": null,
+            "suspension_info": null,
+            "modifier_group_ids": {
+                "overrides": [],
+                "ids": null
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-drink",
+                        "price": 0
+                    }
+                ]
+            },
+            "tax_info": {
+                "tax_rate": null,
+                "vat_rate_percentage": null
+            },
+            "id": "Water"
+        },
+        {
+            "description": {
+                "translations": {
+                    "en_us": ""
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Ground"
+                }
+            },
+            "nutritional_info": {
+                "kilojoules": null,
+                "calories": null
+            },
+            "quantity_info": {
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-type-of-beef",
+                        "quantity": {
+                            "max_permitted": 1,
+                            "min_permitted": null,
+                            "default_quantity": null,
+                            "charge_above": null,
+                            "refund_under": null
+                        }
+                    }
+                ],
+                "quantity": {}
+            },
+            "external_data": null,
+            "suspension_info": null,
+            "modifier_group_ids": {
+                "overrides": [],
+                "ids": null
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-type-of-beef",
+                        "price": 0
+                    }
+                ]
+            },
+            "tax_info": {
+                "tax_rate": null,
+                "vat_rate_percentage": null
+            },
+            "id": "Ground"
+        },
+        {
+            "description": {
+                "translations": {
+                    "en_us": ""
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Wagyu"
+                }
+            },
+            "nutritional_info": {
+                "kilojoules": null,
+                "calories": null
+            },
+            "quantity_info": {
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-type-of-beef",
+                        "quantity": {
+                            "max_permitted": 1,
+                            "min_permitted": null,
+                            "default_quantity": null,
+                            "charge_above": null,
+                            "refund_under": null
+                        }
+                    }
+                ],
+                "quantity": {}
+            },
+            "external_data": null,
+            "suspension_info": null,
+            "modifier_group_ids": {
+                "overrides": [],
+                "ids": [
+                    "Choose-cooking-time"
+                ]
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 300,
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-type-of-beef",
+                        "price": 300
+                    }
+                ]
+            },
+            "tax_info": {
+                "tax_rate": null,
+                "vat_rate_percentage": null
+            },
+            "id": "Wagyu"
+        },
+        {
+            "description": {
+                "translations": {
+                    "en_us": ""
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Well done"
+                }
+            },
+            "nutritional_info": {
+                "kilojoules": null,
+                "calories": null
+            },
+            "quantity_info": {
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-cooking-time",
+                        "quantity": {
+                            "max_permitted": 1,
+                            "min_permitted": null,
+                            "default_quantity": null,
+                            "charge_above": null,
+                            "refund_under": null
+                        }
+                    }
+                ],
+                "quantity": {}
+            },
+            "external_data": null,
+            "suspension_info": null,
+            "modifier_group_ids": {
+                "overrides": [],
+                "ids": null
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-cooking-time",
+                        "price": 0
+                    }
+                ]
+            },
+            "tax_info": {
+                "tax_rate": null,
+                "vat_rate_percentage": null
+            },
+            "id": "Well-done"
+        },
+        {
+            "description": {
+                "translations": {
+                    "en_us": ""
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Grill"
+                }
+            },
+            "nutritional_info": {
+                "kilojoules": null,
+                "calories": null
+            },
+            "quantity_info": {
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-cooking-metho",
+                        "quantity": {
+                            "max_permitted": 1,
+                            "min_permitted": null,
+                            "default_quantity": null,
+                            "charge_above": null,
+                            "refund_under": null
+                        }
+                    }
+                ],
+                "quantity": {}
+            },
+            "external_data": null,
+            "suspension_info": null,
+            "modifier_group_ids": {
+                "overrides": [],
+                "ids": null
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-cooking-metho",
+                        "price": 0
+                    }
+                ]
+            },
+            "tax_info": {
+                "tax_rate": null,
+                "vat_rate_percentage": null
+            },
+            "id": "Grill"
+        },
+        {
+            "description": {
+                "translations": {
+                    "en_us": ""
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Beef"
+                }
+            },
+            "nutritional_info": {
+                "kilojoules": null,
+                "calories": null
+            },
+            "quantity_info": {
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-patty",
+                        "quantity": {
+                            "max_permitted": 1,
+                            "min_permitted": null,
+                            "default_quantity": null,
+                            "charge_above": null,
+                            "refund_under": null
+                        }
+                    }
+                ],
+                "quantity": {}
+            },
+            "external_data": null,
+            "suspension_info": null,
+            "modifier_group_ids": {
+                "overrides": [],
+                "ids": [
+                    "Choose-type-of-beef"
+                ]
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Choose-patty",
+                        "price": 0
+                    }
+                ]
+            },
+            "tax_info": {
+                "tax_rate": null,
+                "vat_rate_percentage": null
+            },
+            "id": "Beef"
+        },
+        {
+            "description": {
+                "translations": {
+                    "en_us": ""
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "No sear"
+                }
+            },
+            "nutritional_info": {
+                "kilojoules": null,
+                "calories": null
+            },
+            "quantity_info": {
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Additional-pan-sear",
+                        "quantity": {
+                            "max_permitted": 1,
+                            "min_permitted": null,
+                            "default_quantity": null,
+                            "charge_above": null,
+                            "refund_under": null
+                        }
+                    }
+                ],
+                "quantity": {}
+            },
+            "external_data": null,
+            "suspension_info": null,
+            "modifier_group_ids": {
+                "overrides": [],
+                "ids": null
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": [
+                    {
+                        "context_type": "MODIFIER_GROUP",
+                        "context_value": "Additional-pan-sear",
+                        "price": 0
+                    }
+                ]
+            },
+            "tax_info": {
+                "tax_rate": null,
+                "vat_rate_percentage": null
+            },
+            "id": "No-sear"
+        }
+    ],
+    "menus": [
+        {
+            "service_availability": [
+                {
+                    "time_periods": [
+                        {
+                            "start_time": "00:00",
+                            "end_time": "23:59"
+                        }
+                    ],
+                    "day_of_week": "monday"
+                },
+                {
+                    "time_periods": [
+                        {
+                            "start_time": "00:00",
+                            "end_time": "23:59"
+                        }
+                    ],
+                    "day_of_week": "tuesday"
+                },
+                {
+                    "time_periods": [
+                        {
+                            "start_time": "00:00",
+                            "end_time": "23:59"
+                        }
+                    ],
+                    "day_of_week": "wednesday"
+                },
+                {
+                    "time_periods": [
+                        {
+                            "start_time": "00:00",
+                            "end_time": "23:59"
+                        }
+                    ],
+                    "day_of_week": "thursday"
+                },
+                {
+                    "time_periods": [
+                        {
+                            "start_time": "00:00",
+                            "end_time": "23:59"
+                        }
+                    ],
+                    "day_of_week": "friday"
+                },
+                {
+                    "time_periods": [
+                        {
+                            "start_time": "00:00",
+                            "end_time": "23:59"
+                        }
+                    ],
+                    "day_of_week": "saturday"
+                },
+                {
+                    "time_periods": [
+                        {
+                            "start_time": "00:00",
+                            "end_time": "23:59"
+                        }
+                    ],
+                    "day_of_week": "sunday"
+                }
+            ],
+            "category_ids": [
+                "Combo-meals"
+            ],
+            "id": "All-day",
+            "title": {
+                "translations": {
+                    "en_us": "All day"
+                }
+            }
+        }
+    ],
+    "categories": [
+        {
+            "entities": [
+                {
+                    "type": "ITEM",
+                    "id": "Burger-combo"
+                }
+            ],
+            "id": "Combo-meals",
+            "title": {
+                "translations": {
+                    "en_us": "Combo meals"
+                }
+            }
+        }
+    ],
+    "modifier_groups": [
+        {
+            "quantity_info": {
+                "overrides": [],
+                "quantity": {
+                    "max_permitted": 1,
+                    "min_permitted": 1,
+                    "default_quantity": null,
+                    "charge_above": null,
+                    "refund_under": null
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Choose patty"
+                }
+            },
+            "external_data": "",
+            "modifier_options": [
+                {
+                    "type": "ITEM",
+                    "id": "Beef"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "Veggie"
+                }
+            ],
+            "display_type": null,
+            "id": "Choose-patty"
+        },
+        {
+            "quantity_info": {
+                "overrides": [],
+                "quantity": {
+                    "max_permitted": 1,
+                    "min_permitted": 1,
+                    "default_quantity": null,
+                    "charge_above": null,
+                    "refund_under": null
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Additional pan sear"
+                }
+            },
+            "external_data": "",
+            "modifier_options": [
+                {
+                    "type": "ITEM",
+                    "id": "No-sear"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "Sear-for-10-seconds"
+                }
+            ],
+            "display_type": null,
+            "id": "Additional-pan-sear"
+        },
+        {
+            "quantity_info": {
+                "overrides": [],
+                "quantity": {
+                    "max_permitted": 1,
+                    "min_permitted": 1,
+                    "default_quantity": null,
+                    "charge_above": null,
+                    "refund_under": null
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Choose cooking method"
+                }
+            },
+            "external_data": "",
+            "modifier_options": [
+                {
+                    "type": "ITEM",
+                    "id": "Sous-vide"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "Grill"
+                }
+            ],
+            "display_type": null,
+            "id": "Choose-cooking-metho"
+        },
+        {
+            "quantity_info": {
+                "overrides": [],
+                "quantity": {
+                    "max_permitted": 1,
+                    "min_permitted": 1,
+                    "default_quantity": null,
+                    "charge_above": null,
+                    "refund_under": null
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Choose a burger"
+                }
+            },
+            "external_data": "",
+            "modifier_options": [
+                {
+                    "type": "ITEM",
+                    "id": "Cheeseburger"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "Chicken-burger"
+                }
+            ],
+            "display_type": null,
+            "id": "Choose-a-burger"
+        },
+        {
+            "quantity_info": {
+                "overrides": [],
+                "quantity": {
+                    "max_permitted": 1,
+                    "min_permitted": 1,
+                    "default_quantity": null,
+                    "charge_above": null,
+                    "refund_under": null
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Choose type of beef"
+                }
+            },
+            "external_data": "",
+            "modifier_options": [
+                {
+                    "type": "ITEM",
+                    "id": "Wagyu"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "Ground"
+                }
+            ],
+            "display_type": null,
+            "id": "Choose-type-of-beef"
+        },
+        {
+            "quantity_info": {
+                "overrides": [],
+                "quantity": {
+                    "max_permitted": 1,
+                    "min_permitted": 1,
+                    "default_quantity": null,
+                    "charge_above": null,
+                    "refund_under": null
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Choose cooking time"
+                }
+            },
+            "external_data": "",
+            "modifier_options": [
+                {
+                    "type": "ITEM",
+                    "id": "Medium-rare"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "Well-done"
+                }
+            ],
+            "display_type": null,
+            "id": "Choose-cooking-time"
+        },
+        {
+            "quantity_info": {
+                "overrides": [],
+                "quantity": {
+                    "max_permitted": 1,
+                    "min_permitted": 1,
+                    "default_quantity": null,
+                    "charge_above": null,
+                    "refund_under": null
+                }
+            },
+            "title": {
+                "translations": {
+                    "en_us": "Choose drink"
+                }
+            },
+            "external_data": "",
+            "modifier_options": [
+                {
+                    "type": "ITEM",
+                    "id": "Soda"
+                },
+                {
+                    "type": "ITEM",
+                    "id": "Water"
+                }
+            ],
+            "display_type": null,
+            "id": "Choose-drink"
+        }
+    ]
+}

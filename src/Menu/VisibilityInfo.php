@@ -9,6 +9,8 @@ use Illuminate\Support\Collection;
 
 class VisibilityInfo extends Model
 {
+    public string $start_date;
+    public string $end_date;
     /** \UbereatsModels\Menu\VisibilityHours */
     public Collection $hours;
 }

@@ -8,7 +8,7 @@ use CastModels\Model;
 
 class MultiLanguageText extends Model
 {
-    public const DEFAULT_LANGUAGE = 'en-US';
+    public const DEFAULT_LANGUAGE = 'en_us';
 
     /** @var array<string, string> $translations */
     public array $translations;

@@ -9,6 +9,6 @@ cp pre-commit-hook .git/hooks/pre-commit
 
 chmod +x .git/hooks/pre-commit
 
-#./vendor/bin/phpunit
+./vendor/bin/phpunit
 
 sleep infinity

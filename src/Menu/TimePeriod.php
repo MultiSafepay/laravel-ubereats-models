@@ -8,6 +8,6 @@ use CastModels\Model;
 
 class TimePeriod extends Model
 {
-    public string $start;
-    public string $end;
+    public string $start_time;
+    public string $end_time;
 }

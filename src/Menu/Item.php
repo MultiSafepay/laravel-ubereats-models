@@ -29,5 +29,6 @@ class Item extends Model
     public BeverageInfo $beverage_info;
     public PhysicalPropertiesInfo $physical_properities_info;
     public MedicationInfo $medication_info;
-    public SellingInfo $selling_info;
+    /** \UbereatsModels\Menu\SellingOption */
+    public Collection $selling_info;
 }

@@ -8,7 +8,7 @@ use CastModels\Model;
 
 class ProductInfo extends Model
 {
-    public int $target_market;
+    public string $target_market;
     public string $gtin;
     public string $plu;
     public string $merchant_id;

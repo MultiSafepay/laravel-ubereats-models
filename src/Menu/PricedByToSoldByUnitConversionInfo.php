@@ -8,5 +8,5 @@ use CastModels\Model;
 
 class PricedByToSoldByUnitConversionInfo extends Model
 {
-    public float $conversion_rate;
+    public int $conversion_rate;
 }
