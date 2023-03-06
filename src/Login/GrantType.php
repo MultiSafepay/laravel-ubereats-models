@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace UbereatsModels\Order;
+namespace UbereatsModels\Login;
 
 use UbereatsModels\Enum\Helper;
 
