@@ -8,5 +8,5 @@ enum OverrideContext : string
 {
     case menu = 'MENU';
     case item = 'ITEM';
-    case ModifierGroup = 'MODIFIER_GROUP';
+    case modifierGroup = 'MODIFIER_GROUP';
 }
