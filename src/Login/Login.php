@@ -12,6 +12,6 @@ class Login extends Model
     public int $expires_in;
     public string $access_token;
     public string $token_type;
-    public Scope $scope;
+    public string $scope;
     public string $refresh_token;
 }

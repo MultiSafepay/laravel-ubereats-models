@@ -8,5 +8,5 @@ use CastModels\Model;
 
 class Volume extends Model
 {
-    public VolumeType $unit_type;
+    public string $unit_type;
 }

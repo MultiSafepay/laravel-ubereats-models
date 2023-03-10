@@ -8,8 +8,8 @@ use CastModels\Model;
 
 class MeasurementUnit extends Model
 {
-    public MeasurementType $measurement_type;
-    public LengthUnit $length_unit;
-    public WeightUnit $weight_unit;
-    public VolumeUnit $volume_unit;
+    public string $measurement_type;
+    public string $length_unit;
+    public string $weight_unit;
+    public string $volume_unit;
 }

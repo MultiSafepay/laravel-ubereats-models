@@ -10,5 +10,5 @@ class EnergyInfo extends Model
 {
     public int $lower_range;
     public int $upper_range;
-    public EnergyInfoType $display_type;
+    public string $display_type;
 }

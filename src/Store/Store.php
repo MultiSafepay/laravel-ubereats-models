@@ -18,7 +18,7 @@ class Store extends Model
     public string $raw_hero_url;
     public string $price_bucket;
     public int $avg_prep_time;
-    public Status $status;
+    public string $status;
     public string $merchant_store_id;
     public string $timezone;
     public string $web_url;

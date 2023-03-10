@@ -8,7 +8,7 @@ use CastModels\Model;
 
 class Location extends Model
 {
-    public LocationType $type;
+    public string $type;
     public string $street_address;
     public float $latitude;
     public float $longitude;

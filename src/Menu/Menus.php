@@ -21,5 +21,5 @@ class Menus extends Model
     /** \UbereatsModels\Menu\ModifierGroup */
     public Collection $modifier_groups;
 
-    public Type $menu_type;
+    public string $menu_type;
 }

@@ -16,5 +16,5 @@ class ModifierGroup extends Model
 
     /** \UbereatsModels\Menu\MenuEntity */
     public Collection $modifier_options;
-    public DisplayType $display_type;
+    public string $display_type;
 }

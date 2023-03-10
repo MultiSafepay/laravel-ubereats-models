@@ -8,6 +8,6 @@ use CastModels\Model;
 
 class Count extends Model
 {
-    public CountType $unit_type;
+    public string $unit_type;
     public string $custom_unit;
 }

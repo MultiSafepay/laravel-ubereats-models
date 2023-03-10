@@ -8,6 +8,6 @@ use CastModels\Model;
 
 class Jurisdiction extends Model
 {
-    public JurisdictionLevel $level;
+    public string $level;
     public string $name;
 }

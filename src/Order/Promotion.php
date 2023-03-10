@@ -10,7 +10,7 @@ use Illuminate\Support\Collection;
 class Promotion extends Model
 {
     public string $external_promotion_id;
-    public PromoType $promo_type;
+    public string $promo_type;
     public int $promo_discount_value;
     public int $promo_discount_percentage;
     public int $promo_delivery_fee_value;

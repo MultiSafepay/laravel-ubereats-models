@@ -9,5 +9,5 @@ use CastModels\Model;
 class MenuEntity extends Model
 {
     public string $id;
-    public MenuEntityType $type;
+    public string $type;
 }

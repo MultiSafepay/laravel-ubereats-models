@@ -8,5 +8,5 @@ use CastModels\Model;
 
 class Weight extends Model
 {
-    public WeightType $unit_type;
+    public string $unit_type;
 }

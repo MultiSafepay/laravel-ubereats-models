@@ -8,7 +8,7 @@ use CastModels\Model;
 
 class PriceOverride extends Model
 {
-    public OverrideContext $context_type;
+    public string $context_type;
     public string $context_value;
     public int $price = 0;
     public int $core_price = 0;

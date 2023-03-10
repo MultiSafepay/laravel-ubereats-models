@@ -13,7 +13,7 @@ class EatsDelivery extends Model
     public Vehicle $vehicle;
     public string $picture_url;
     public string $estimated_pickup_time;
-    public EatsDeliveryState $current_state;
+    public string $current_state;
     public string $phone;
     public string $phone_code;
 }

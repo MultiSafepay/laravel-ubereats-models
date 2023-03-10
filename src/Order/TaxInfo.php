@@ -10,7 +10,7 @@ use Illuminate\Support\Collection;
 class TaxInfo extends Model
 {
     public string $instance_id;
-    public TaxInfoType $type;
+    public string $type;
     public Money $gross_amount;
     public Money $net_amount;
     public Money $total_tax;

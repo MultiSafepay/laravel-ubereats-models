@@ -8,7 +8,7 @@ use CastModels\Model;
 
 class ModifierGroupsOverride extends Model
 {
-    public OverrideContext $context_type;
+    public string $context_type;
     public string $context_value;
 
     /** @var array<string> $ids */

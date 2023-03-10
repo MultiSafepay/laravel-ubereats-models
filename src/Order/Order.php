@@ -13,9 +13,9 @@ class Order extends Model
     public string $display_id;
     public string $uuid;
     public string $external_reference_id;
-    public State $current_state;
-    public Type $type;
-    public Brand $brand;
+    public string $current_state;
+    public string $type;
+    public string $brand;
     public Store $store;
     public Eater $eater;
     /** \UbereatsModels\Order\Eater */

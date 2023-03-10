@@ -8,7 +8,7 @@ use CastModels\Model;
 
 class SuspensionOverride extends Model
 {
-    public OverrideContext $context_type;
+    public string $context_type;
     public string $context_value;
     public Suspension $suspension;
 }
