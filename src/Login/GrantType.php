@@ -10,6 +10,6 @@ enum GrantType: string
 {
     use Helper;
 
-    case client_credentials = 'client-credentials';
-    case authorization_code = 'authorization-code';
+    case client_credentials = 'client_credentials';
+    case authorization_code = 'authorization_code';
 }
