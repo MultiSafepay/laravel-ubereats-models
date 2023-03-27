@@ -1,6 +1,6 @@
 {
     "name": "multisafepay/laravel-ubereats-models",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "A package for communicating problems",
     "type": "library",
     "license": "GPL-3.0-or-later",
